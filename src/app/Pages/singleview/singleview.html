@@ -1,0 +1,29 @@
+
+
+<div  class="card-container">
+    
+    <div class="card">
+        <p  class="highlight">Loading Details...</p>
+        <img [src]='singleproduct?.thumbnail' alt="Product image" class="product-img"> 
+        <h2 class="product-title">{{singleproduct?.title}}</h2>
+        <p class="product-price">{{singleproduct?.price * 83 | number:'1.0-0'}}</p>
+        <span class="product-category">{{singleproduct?.category}}</span>
+
+
+        <!-- ADD TO CART BUTTON -->
+    <button class="btn" (click)="addToCart()">
+      Add to Cart
+    </button>
+
+    <!-- FAKE MESSAGE -->
+    <p *ngIf="added" class="highlight">
+      Added to cart ✔
+    </p>
+
+    <button class="btn" (click)="addToWishlist()">
+  Add to Wishlist
+</button>
+
+    </div>
+</div>
+

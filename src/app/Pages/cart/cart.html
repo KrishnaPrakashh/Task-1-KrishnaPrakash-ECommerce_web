@@ -1,0 +1,19 @@
+<h2>My Cart</h2>
+
+<!-- Empty cart -->
+<p *ngIf="cartProducts.length === 0">Your cart is empty</p>
+
+<!-- Clear Cart Button -->
+<button *ngIf="cartProducts.length > 0" class="btn btn-danger" (click)="clearCart()">
+  Clear Cart
+</button>
+
+<!-- Cart items -->
+<div class="card-container" *ngIf="cartProducts.length > 0">
+  <div class="card" *ngFor="let item of cartProducts; let i = index">
+    <img [src]="item.thumbnail" class="product-img" />
+    <h3>{{ item.title }}</h3>
+    <p>Price: ${{ item.price }}</p>
+    <button class="btn btn-sm btn-warning" (click)="removeProduct(i)">Remove</button>
+  </div>
+</div>

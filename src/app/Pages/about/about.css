@@ -1,0 +1,13 @@
+.hero {
+  height: 80vh;
+  background: linear-gradient(to right, #f8f9fa, #e9ecef);
+}
+
+.hero h1 {
+  font-size: 3rem;
+}
+
+.card img {
+  height: 220px;
+  object-fit: cover;
+}
