@@ -165,7 +165,7 @@ ng build
 
 ### Cart Page
 
-![Cart Page](Screenshots/cart.png)
+![Cart Page](Screenshots/cart_page.png)
 
 ### Footer 
 
